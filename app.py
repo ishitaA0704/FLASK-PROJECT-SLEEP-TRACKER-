@@ -1,7 +1,10 @@
-from flask import Flask, render_template
-app = Flask(__name__)
-@app.route("/home")
-def home():
-    return render_template("home.html")
+from track import app, db
+from track.models import Sleep
+
+with app.app_context():
+    db.create_all()
+    
+if __name__ == "__main__":
+    app.run(debug=True)
 
 

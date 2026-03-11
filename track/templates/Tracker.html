@@ -16,12 +16,13 @@
             </tr>
         </thead>
         <tbody>
-            {% for data in datas %}
+            {% for sleep in sleep_data %}
             <tr>
-                <td>{{ data.date }}</td>
-                <td>{{ data.sleeptime }}</td>
-                <td>{{ data.waketime }}</td>
-                <td>{{ data.duration }}</td>
+                <td>{{ sleep.num }}</td>
+                <td>{{ sleep.date }}</td>
+                <td>{{ sleep.sleeptime }}</td>
+                <td>{{ sleep.waketime }}</td>
+                <td>{{ sleep.duration }}</td>
             </tr>
             {% endfor %}
         </tbody>
