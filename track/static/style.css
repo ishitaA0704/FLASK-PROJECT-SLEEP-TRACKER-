@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Space+Mono:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #1a1f3c;
+  --card: #252b52;
+  --hover: #2e3566;
+  --accent: #7c6aff;
+  --accent-light: #a594ff;
+  --text: #e8e6ff;
+  --text-faded: #9b99cc;
+  --green: #4ade80;
+  --red: #f87171;
+  --border: rgba(124, 106, 255, 0.2);
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  background-image: radial-gradient(ellipse at top, #2a2060 0%, var(--bg) 60%);
+}
+
+.navbar {
+  background-color: rgba(26, 31, 60, 0.9) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+}
+
+.navbar-brand {
+  font-family: 'Space Mono', monospace;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--accent-light) !important;
+  letter-spacing: 3px;
+}
+
+.nav-link {
+  color: var(--text-faded) !important;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+  color: var(--text) !important;
+  background-color: var(--hover);
+}
+
+
+.container {
+  max-width: 900px;
+  margin-top: 40px;
+}
+
+h1 { font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem; text-align: center; }
+h2 { font-size: 1.6rem; font-weight: 700; margin-bottom: 1rem; text-align: center; }
+
+
+.form-control {
+  background-color: var(--card) !important;
+  color: var(--text) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 10px !important;
+}
+
+.form-control:focus {
+  border-color: var(--accent) !important;
+  box-shadow: 0 0 0 2px rgba(124,106,255,0.3) !important;
+}
+.btn {
+  border-radius: 10px !important;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--accent), #9b5de5) !important;
+  border: none !important;
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(124, 106, 255, 0.4);
+}
+
+.table {
+  background-color: var(--card) !important;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.table thead {
+  background-color: rgba(124, 106, 255, 0.2);
+}
+
+.table th {
+  color: var(--accent-light)   !important;
+  border: none !important;
+}
+
+.table td {
+  color: var(--text) !important;
+     border-color: var(--border) !important;
+}
+
+.table-hover tbody tr:hover {
+  background-color: var(--hover) !important;
+}
+
+
+p {
+  color: var(--text-faded);
+  text-align: center;
+}
