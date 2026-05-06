@@ -1,7 +1,7 @@
 from track import app
 from flask import flash, render_template, request, redirect, url_for
 from track import db
-from track.models import Sleep
+from track.models import Sleep, User
 from track.log import LoginForm
 
 
