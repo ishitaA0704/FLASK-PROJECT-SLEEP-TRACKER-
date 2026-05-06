@@ -2,7 +2,16 @@
 {% block title %}
     <h1>TRACKER</h1>
 {% endblock %}
+<h2>Add Sleep Entry</h2>
 
+<form method="POST" action="{{ url_for('Track') }}">
+    <input type="text" name="date" placeholder="Date (YYYY-MM-DD)" required>
+    <input type="text" name="sleeptime" placeholder="Sleep Time (e.g. 11:00 PM)" required>
+    <input type="text" name="waketime" placeholder="Wake Time (e.g. 7:00 AM)" required>
+    <button type="submit">Add Entry</button>
+</form>
+
+<hr>
 {% block content %}
      <table class="table table-hover table-dark">
         <thead>
